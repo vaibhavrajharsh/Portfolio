@@ -19,6 +19,7 @@ header{
 
 
 .logo{
+  
   font-size: 25px;
   font-weight: 400;
   padding-top: 10px;
@@ -28,7 +29,7 @@ header{
 }
 .logo span{
   
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 800;
   color: green;
 }
@@ -76,13 +77,16 @@ ul{
 .main{
   z-index: -2;
   display: flex;
+ 
+  
   align-items: center;
   justify-content: space-around;
   background-color: #151313;
-  height: 500px;
+  height: 600px;
 }
 
 .image img{
+  margin-top: 35px;
   
   width: 50vw;
 }
@@ -130,4 +134,41 @@ a{
 .current-page a{
   color: green;
   text-decoration: underline;
+}
+
+@media (max-width: 600px){
+  body{
+    height: 100vh;
+  }
+  .main{
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+   .intro{
+     text-align: center;
+   }
+   header{
+     flex-direction: column;
+   }
+   li{
+     align-items: center;
+     padding-right: 15px;
+     font-size: 15px;
+     
+   }
+   .intro{
+     width: 100vw;
+    position: relative;
+    left: 3px;
+    bottom: 50px;
+   }
+   .main .intro h1{
+     font-size: 50px;
+     }
+   .main .intro p{
+     font-size: 15px;
+   }
+   .image img{
+     width: 60vw;
+   }
 }
