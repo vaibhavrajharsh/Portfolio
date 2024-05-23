@@ -88,12 +88,13 @@ ul{
 .image img{
   margin-top: 35px;
   
-  width: 50vw;
+  width: 45vw;
 }
 
 .intro{
   position: relative;
   left: 35px;
+  width: 45vw;
   
 }
 
